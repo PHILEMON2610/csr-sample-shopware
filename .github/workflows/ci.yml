@@ -1,0 +1,12 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # composer.lock must match composer.json (PHP and Composer are preinstalled on the runner)
+      - run: composer validate --no-check-publish

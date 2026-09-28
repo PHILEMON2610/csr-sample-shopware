@@ -1,0 +1,20 @@
+{
+    "name": "csr-sample/shopware-shop",
+    "description": "Commerce Security Radar test fixture: a deliberately outdated Shopware core. Not a real shop.",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "~8.3.0",
+        "shopware/core": "6.7.9.1"
+    },
+    "config": {
+        "platform": {
+            "php": "8.3.0"
+        },
+        "allow-plugins": {
+            "symfony/runtime": false,
+            "php-http/discovery": false
+        }
+    },
+    "minimum-stability": "stable"
+}
